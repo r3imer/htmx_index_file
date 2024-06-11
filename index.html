@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Test App</title>
+        <link rel="stylesheet" href="https://unpkg.com/missing.css@1.1.1" />
+        <!-- <link rel="stylesheet" href="/site.css" /> -->
+        <script
+            src="https://unpkg.com/htmx.org@1.9.12"
+            crossorigin="anonymous"
+            integrity="449317ade7881e949510db614991e195c3a099c4c791c24dacec55f9f4a2a452"
+        ></script>
+    </head>
+    <body>
+        <header class="navbar"></header>
+        <main>
+            <!-- <main hx-request='{"noHeaders": true}'> -->
+            <p>Hello World</p>
+            <!-- <button hx-get="http://localhost:9100/todos/v2">Test</button> -->
+            <button
+                hx-get="https://www.tutiempo.net/"
+                hx-target="#output"
+                hx-select=".ExtremasV7"
+            >
+                Weather
+            </button>
+            <div id="output" class="box"></div>
+        </main>
+        <footer></footer>
+        <!-- <script> $.support.cors = true; </script> -->
+    </body>
+</html>
