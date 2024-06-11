@@ -5,24 +5,24 @@
         <link rel="stylesheet" href="https://unpkg.com/missing.css@1.1.1" />
         <!-- <link rel="stylesheet" href="/site.css" /> -->
         <script
+            src="https://unpkg.com/hyperscript.org@0.9.12"
+            crossorigin="anonymous"
+            integrity="cd737e9904a7eed1ee9639b75eb07915baad92961586d0a1fd6d998d24179de6"></script>
+        <script
             src="https://unpkg.com/htmx.org@1.9.12"
             crossorigin="anonymous"
-            integrity="449317ade7881e949510db614991e195c3a099c4c791c24dacec55f9f4a2a452"
-        ></script>
+            integrity="449317ade7881e949510db614991e195c3a099c4c791c24dacec55f9f4a2a452"></script>
     </head>
     <body>
         <header class="navbar"></header>
         <main>
             <!-- <main hx-request='{"noHeaders": true}'> -->
-            <p>Hello World</p>
+            <p>Tests</p>
             <!-- <button hx-get="http://localhost:9100/todos/v2">Test</button> -->
-            <button
-                hx-get="https://www.tutiempo.net/"
-                hx-target="#output"
-                hx-select=".ExtremasV7"
-            >
+            <button hx-get="https://www.tutiempo.net/" hx-target="#output" hx-select=".ExtremasV7">
                 Weather
             </button>
+            <button _="on click put '' into #output">Clear</button>
             <div id="output" class="box"></div>
         </main>
         <footer></footer>
